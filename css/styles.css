@@ -1,0 +1,482 @@
+/*Общие
+      стили*/
+body {
+    margin: 0;
+    padding: 0;
+    float: left;
+    min-width: 100%;
+}
+.flex {
+    display: flex;
+}
+.flex-vertical {
+    flex-direction: column;
+}
+.flex-horizontal {
+    flex-direction: row;
+}
+@font-face {
+    font-family: "Lucida Suns Italic";
+    src: url("../fonts/Lucida Sans Italic.ttf");
+}
+@font-face {
+    font-family: "Lao UI";
+    src: url("../fonts/Lao UI.ttf");
+}
+@font-face {
+    font-family: "Segoe Wp";
+    src: url("../fonts/segoe-wp.ttf");
+}
+@font-face {
+    font-family: "Segoe Wp Light";
+    src: url("../fonts/segoe-wp-light.ttf");
+}
+@font-face {
+    font-family: "Asap Regular";
+    src: url("../fonts/asap.ttf");
+}
+@font-face {
+    font-family: "Segoe UI Light";
+    src: url("../fonts/segoe ui light.ttf");
+}
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url("../fonts/segoe-ui-bold.ttf");
+}
+@font-face {
+    font-family: "PTSans Regular";
+    src: url("../fonts/pt-sans.ttf");
+}
+@font-face {
+    font-family: "PTSans Narrow Bold";
+    src: url("../fonts/pt-sans-narrow-bold.ttf");
+}
+@font-face {
+    font-family: "OpenSans Regular";
+    src: url("../fonts/open_sans.ttf");
+}
+
+/*Стили
+      Header*/
+header {
+    width: 100%;
+    background: url("../images/header/header_banner.png") no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.header_container {
+    width: 1300px;
+    height: 566px;
+}
+.header_top {
+    margin-top: 28px;
+    margin-left: 140px;
+    align-items: center;
+}
+.logo {
+    align-items: center;
+}
+.logo h1 {
+    text-transform: uppercase;
+    margin-left: 9px;
+    font-family: "Lucida Suns Italic", sans-serif;
+    color: #ffffff;
+    font-size: 41px;
+    font-style: italic;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.42);
+}
+.logo span {
+    font-family: "Lao UI", sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 17px;
+    margin-left: 5px;
+}
+nav {
+    position: relative;
+    height: 50px;
+    margin-top: 17px;
+    margin-left: 73px;
+}
+nav > div:first-child {
+    background: -webkit-linear-gradient(90deg, rgba(245, 197, 6, 0.27) 50%, rgba(245, 197, 6, 0.27) 100%);
+    background: -moz-linear-gradient(90deg, rgba(245, 197, 6, 0.27) 50%, rgba(245, 197, 6, 0.27) 100%);
+    background: -o-linear-gradient(90deg, rgba(245, 197, 6, 0.27) 50%, rgba(245, 197, 6, 0.27) 100%);
+    background: -ms-linear-gradient(90deg, rgba(245, 197, 6, 0.27) 50%, rgba(245, 197, 6, 0.27) 100%);
+    background: linear-gradient(90deg, rgba(245, 197, 6, 0.27) 50%, rgba(245, 197, 6, 0.27) 100%);
+    /* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
+    width: 453px;
+    height: 41px;
+    /*border: thin solid;*/
+    position: absolute;
+}
+nav > div:nth-child(2) {
+    background: -webkit-linear-gradient(90deg, rgba(245, 197, 6, 0.27) 50%, rgba(245, 197, 6, 0.27) 100%);
+    background: -moz-linear-gradient(90deg, rgba(245, 197, 6, 0.27) 50%, rgba(245, 197, 6, 0.27) 100%);
+    background: -o-linear-gradient(90deg, rgba(245, 197, 6, 0.27) 50%, rgba(245, 197, 6, 0.27) 100%);
+    background: -ms-linear-gradient(90deg, rgba(245, 197, 6, 0.27) 50%, rgba(245, 197, 6, 0.27) 100%);
+    background: linear-gradient(90deg, rgba(245, 197, 6, 0.27) 50%, rgba(245, 197, 6, 0.27) 100%);
+    /* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
+    width: 453px;
+    height: 41px;
+    /*border: thin solid;*/
+    position: absolute;
+    left: 3px;
+    bottom: 6px;
+}
+.nav_menu {
+    width: 453px;
+    height: 41px;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left: 6px;
+    bottom: 2px;
+    background-color: #f5c506;
+}
+.nav_menu a {
+    font-family: "Segoe Wp", sans-serif;
+    color: #9b7d08;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    height: 40px;
+    border-right: 1px solid #9b7d08;
+    padding-right: 22px;
+}
+.nav_menu a:first-child {
+    margin-left: 25px;
+}
+.nav_menu a:last-child {
+    border: none;
+}
+.nav_menu a img {
+    margin-right: 9px;
+}
+.video {
+    width: 549px;
+    height: 327px;
+    margin-left: 150px;
+    margin-top: 57px;
+}
+.slogan {
+    align-items: center;
+    justify-content: center;
+    margin-left: 51px;
+}
+.slogan span:first-child {
+    font-family: "Asap Regular", sans-serif;
+    color: #f5c506;
+    font-size: 63px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.slogan span:last-child {
+    font-family: "Asap Regular", sans-serif;
+    color: #ffffff;
+    font-size: 63px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/*Стили
+     центрального
+               блока*/
+main {
+    width: 100%;
+}
+/*Верхний
+       центральный
+                блок*/
+.middle_one_block {
+    width: 100%;
+    background: url("../images/middle_1/middle_1.png") no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px 1px  rgba(0,0,0,1.5); /* Параметры тени */
+}
+.middle_one_container {
+    width: 1300px;
+    height: 212px;
+    justify-content: center;
+    align-items: center;
+}
+.feature {
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 212px;
+    text-decoration: none;
+}
+.feature:first-child {
+    border-left: 1px solid gainsboro;
+}
+.feature:nth-child(2) {
+    border-left: 1px solid gainsboro;
+}
+.feature:last-child {
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+}
+.feature:first-child > img:first-child {
+    width: 109px;
+    height: 74px;
+}
+.feature:nth-child(2) > img:first-child {
+    width: 91px;
+    height: 95px;
+}
+.feature:last-child > img:first-child {
+    width: 81px;
+    height: 83px;
+}
+.feature > span {
+    font-family: "Segoe UI Light", sans-serif;
+    color: #000000;
+    font-size: 27px;
+    font-weight: 300;
+    /*letter-spacing: 1px;*/
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+.feature:nth-child(2) > span:nth-child(2) {
+    margin-bottom: 22px;
+}
+.feature:last-child > span:nth-child(2) {
+    margin-bottom: 12px;
+}
+/*Средний
+       центральный
+                блок*/
+.middle_two_block {
+    width: 100%;
+    background: url("../images/middle_2/middle_2.png") no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.middle_two_container {
+    width: 1300px;
+    height: 509px;
+}
+.middle_two_container h3 {
+    font-family: "OpenSans Regular", sans-serif;
+    color: #ffffff;
+    font-size: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 139px;
+}
+.news_block {
+    margin-left: 139px;
+}
+.news_block > div {
+    width: 341px;
+    height: 233px;
+    background-color: #ec9e03;
+    align-items: center;
+    justify-content: flex-start;
+}
+.news_block > div > p {
+    font-family: "Segoe UI Light", sans-serif;
+    color: #ffffff;
+    font-size: 29px;
+    font-weight: 300;
+    line-height: 38px;
+    text-align: left;
+    margin-left: 31px;
+}
+.video_2 {
+    width: 315px;
+    height: 233px;
+}
+.news_block > div > a {
+    margin-top: 200px;
+    margin-right: 14px;
+}
+.twitter_block {
+    width: 329px;
+    height: 233px;
+    background-color: #ec9e03;
+    align-items: center;
+    margin-left: 34px;
+}
+.twitter_block > span {
+    font-family: "Segoe Wp Light", sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 38px;
+    margin-top: 8px;
+    margin-left: 275px;
+}
+.twitter_block > i {
+    color: rgba(188, 125, 0, 0.9);
+    font-size: 175px;
+}
+.twitter_block > a {
+    margin-top: -12px;
+    margin-left: 295px;
+}
+.date {
+    background-color: #d1ad06;
+    width: 113px;
+    height: 86px;
+    margin-left: 139px;
+    align-items: center;
+    justify-content: center;
+}
+.date span:first-child {
+    font-family: "Segoe UI Bold", sans-serif;
+    color: #ffffff;
+    font-size: 51px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-top: 10px;
+}
+.date span:last-child {
+    font-family: "Segoe UI", sans-serif;
+    color: #b26529;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+
+/*Нижний
+      центральный
+               блок*/
+.middle_three_block {
+    width: 100%;
+    background: url("../images/middle_3/middle_3.png") no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    /*box-shadow: 0 0 15px 1px  rgba(0,0,0,1.5); !* Параметры тени *!*/
+}
+.middle_three_container {
+    width: 1300px;
+    height: 499px;
+    /*justify-content: center;*/
+    align-items: center;
+}
+.middle_three_container h2 {
+    font-family: "PTSans Regular", sans-serif;
+    color: #f5c506;
+    font-size: 43px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.middle_three_container > div:nth-child(2) {
+    align-items: center;
+    justify-content: space-between;
+    width: 1300px;
+}
+.free {
+    margin-left: 158px;
+}
+.free > img:nth-child(2) {
+    width: 129px;
+    height: 173px;
+    margin-left: 24px;
+    margin-top: 42px;
+}
+.free > img:last-child {
+    width: 39px;
+    height: 63px;
+    margin-left: 25px;
+    margin-top: 152px;
+}
+.pc {
+    position: relative;
+}
+.circle {
+    width: 116px;
+    height: 116px;
+    margin: 1em auto;
+    background: #f5c506;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-family: "PTSans Narrow Bold", sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 160px;
+    right: 230px;
+}
+.list {
+    margin-left: 80px;
+    margin-top: 45px;
+}
+.list li {
+    list-style-image: url("../images/middle_3/circle.png");
+    margin-top: 26px;
+}
+.list span {
+    font-family: sans-serif;
+    color: #a9a9a7;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/*Стили
+     Footer*/
+footer {
+    width: 100%;
+    background: url("../images/footer/footer.png") no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    /*box-shadow: 0 -3px 5px 0 rgba(0, 0, 0, 0.75);*/
+}
+.footer_container {
+    width: 1300px;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_footer {
+    margin-left: 141px;
+    align-items: center;
+}
+/* .logo_footer a {
+    position: relative;
+} */
+/* .logo_footer img {
+    position: absolute;
+} */
+.logo_footer a > img:last-child {
+    margin-left: -53px;
+}
+.logo_footer h5 {
+    font-family: "Lucida Suns Italic", sans-serif;
+    color: #ffffff;
+    font-size: 29px;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 9px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.design {
+    font-family: "OpenSans Regular", sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 141px;
+}
+
+
+
